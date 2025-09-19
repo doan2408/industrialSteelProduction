@@ -156,5 +156,4 @@ class CustomerController extends Controller {
 		tblCustomerModel::where('id',$id)->update(['status'=>2]);
 		return 'true';
 	}
-	
 }

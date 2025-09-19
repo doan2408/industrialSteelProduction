@@ -114,8 +114,7 @@
 											<label class="col-form-label pt-0">Email</label>
 											{{Form::text('email','',array('class'=>'form-control'))}}
 										</div>
-									</div>
-									
+									</div>	
 								</div>
 							</div>
 						</div>

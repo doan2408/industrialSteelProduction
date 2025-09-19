@@ -232,11 +232,11 @@ Route::prefix('dashboard')->group(function () {
 				Route::get('/view', [StudentsController::class, 'index'])->name('view-student');
 				Route::get('/add', [StudentsController::class, 'create'])->name('add-student');
 				Route::get('/edit/{id}', [StudentsController::class, 'edit'])->name('edit-student');
-				Route::post('/add', [StudentsController::class, 'store'])->name('post-add-student'); // FIX: Đã có route này
+				Route::post('/add', [StudentsController::class, 'store'])->name('post-add-student');
 				Route::post('/update', [StudentsController::class, 'update'])->name('post-edit-student');
 				Route::post('/data', [StudentsController::class, 'data'])->name('post-data-student');
 				Route::post('/delete/{id}', [StudentsController::class, 'destroy'])->name('post-delete-student');
-				Route::post('/active/{id}', [StudentsController::class, 'active'])->name('post-active-student'); // FIX: Thay đổi method name
+				Route::post('/active/{id}', [StudentsController::class, 'active'])->name('post-active-student');
 			});
 		});
 	});

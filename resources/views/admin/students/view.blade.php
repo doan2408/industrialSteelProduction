@@ -94,12 +94,12 @@
 					"render": function(data, type, row, meta) {
 						var actions = '<a class="" title="Sửa" href="' + data.url_edit + '"><i class="fa fa-pencil"></i></a>';
 						
-						if (data.tstatus == 0) { //  - Không hoạt động - hiện cả 2 nút
-							actions += ' | <a class="action_table" title="Duyệt" href="javascript:void(0)" data-url="' + data.url_active + '"><i class="fa fa-check"></i></a>';
+						// if (data.tstatus == 0) { //  - Không hoạt động - hiện cả 2 nút
+						// 	// actions += ' | <a class="action_table" title="Duyệt" href="javascript:void(0)" data-url="' + data.url_active + '"><i class="fa fa-check"></i></a>';
+						// 	actions += ' | <a class="action_table" title="Xóa" href="javascript:void(0)" data-url="' + data.url_delete + '"><i class="fa fa-trash-o"></i></a>';
+						// } else if (data.tstatus == 1) { // Hoạt động - chỉ hiện nút Xóa
 							actions += ' | <a class="action_table" title="Xóa" href="javascript:void(0)" data-url="' + data.url_delete + '"><i class="fa fa-trash-o"></i></a>';
-						} else if (data.tstatus == 1) { // Hoạt động - chỉ hiện nút Xóa
-							actions += ' | <a class="action_table" title="Xóa" href="javascript:void(0)" data-url="' + data.url_delete + '"><i class="fa fa-trash-o"></i></a>';
-						}
+						// }
 						
 						return actions;
 					}
